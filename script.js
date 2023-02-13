@@ -60,3 +60,10 @@ function success(){
         icon: "Success",
       })
 }
+
+// header background change on scrolling
+let header = document.querySelector('header')
+
+window.addEventListener('scroll', ()=>{
+    header.classList.toggle("header-active", window.scrollY > 0)
+})
