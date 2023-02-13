@@ -2,7 +2,7 @@ let menuIcon = document.querySelector('.menu-icon')
 let navbar = document.querySelector('.navbar')
 
 menuIcon.onClick = () => {
-    menu.classList.toggle("move")
+    menuIcon.classList.toggle("move")
     navbar.classList.toggle("open-menu")
 };
 

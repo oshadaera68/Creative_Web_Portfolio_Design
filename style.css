@@ -126,15 +126,15 @@ header {
     transition: 0.3s;
 }
 
-.move .line1 {
+.move .line01 {
     transform: rotate(-45deg) translate(-5px, 5px);
 }
 
-.move .line2 {
+.move .line02 {
     opacity: 0;
 }
 
-.move .line3 {
+.move .line03 {
     transform: rotate(45deg) translate(-5px, -5px);
 }
 
