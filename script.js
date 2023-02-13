@@ -7,7 +7,7 @@ menuIcon.onClick = () => {
 };
 
 window.onscroll=()=>{
-    menu.classList.remove("move")
+    menuIcon.classList.remove("move")
     navbar.classList.remove("open-menu")
 }
 
