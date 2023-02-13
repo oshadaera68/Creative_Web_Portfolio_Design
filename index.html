@@ -262,14 +262,30 @@
         <form action="" class="contact-form" id="contact-form">
             <input type="text" placeholder="Your name" class="name" required>
             <input type="email" placeholder="Email address" class="email" required>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Write message here.." class="message" required></textarea>
-            <input type="submit" name="send" value="send-btn">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write message here.." class="message"
+                required></textarea>
+            <input type="submit" name="send" value="Send" class="send-btn">
         </form>
     </section>
 
+    <!-- link to email js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <!-- link to sweetalert js -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("znr7_HjOhLuZ7o8vw");
+        })();
+    </script>
+
     <!-- link to swiper js -->
     <script src="assets/js/swiper-bundle.min.js"></script>
+
     <!-- link to js -->
     <script src="script.js"></script>
 </body>
+
 </html>

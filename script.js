@@ -9,11 +9,54 @@ var swiper = new Swiper(".reviews-content", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-      delay: 5000,
-      disableOnInteraction: true,
+        delay: 5000,
+        disableOnInteraction: true,
     },
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
-  });
+});
+
+// email js
+function validate() {
+    let name = document.querySelector('.name')
+    let email = document.querySelector('.email')
+    let msg = document.querySelector('.message')
+    let send = document.querySelector('.send-btn')
+
+    send.addEventListener('click', (e) => {
+        e.preventDefault()
+        if (name.value == "" || email.value == "" || msg.value == "") {
+            emptyerror();
+        } else {
+            sendmail(name.value, email.value, msg.value)
+            success();
+        }
+    })
+}
+validate();
+
+function sendmail(name,email,msg){
+    emailjs.send("service_eu6594b","template_knui6qf",{
+        from_name: email,
+        to_name: name,
+        message: msg,
+        });
+}
+
+function emptyerror(){
+    swal({
+        title: "Oh No...",
+        text: "Fields can't be empty!!",
+        icon: "error",
+      })
+}
+
+function success(){
+    swal({
+        title: "Email sent successfully..!",
+        text: "We try to reply in 24 hours",
+        icon: "Success",
+      })
+}

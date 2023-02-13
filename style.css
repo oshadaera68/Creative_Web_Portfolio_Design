@@ -444,19 +444,19 @@ header {
     align-items: center;
 }
 
-.review-profile h2{
+.review-profile h2 {
     font-size: 1.1rem;
     line-height: 1.3rem;
     color: var(--main-color);
     font-weight: 600;
 }
 
-.review-profile span{
+.review-profile span {
     font-size: 0.84rem;
     margin: 0.5rem 0 0.7rem;
 }
 
-.review-profile img{
+.review-profile img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -469,7 +469,7 @@ header {
     object-position: center;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
     width: 6px !important;
     height: 6px !important;
     border-radius: 0.2rem !important;
@@ -477,7 +477,43 @@ header {
     opacity: 1 !important;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
     width: 1.5rem !important;
     background: var(--main-color) !important;
+}
+
+/* Contact */
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    row-gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    padding: 15px;
+    color: var(--bg-color);
+    background: var(--box-color);
+    border-radius: 0.4rem;
+}
+
+.contact-form .send-btn{
+    width: 120px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding:12px;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.contact-form .send-btn:hover{
+    background: #546eff;
+    transition: 0.3s all linear;
 }
