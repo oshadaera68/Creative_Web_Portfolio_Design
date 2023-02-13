@@ -1,8 +1,15 @@
-let menu = document.querySelector('.menu-icon')
+let menuIcon = document.querySelector('.menu-icon')
+let navbar = document.querySelector('.navbar')
 
-menu.onClick = () => {
+menuIcon.onClick = () => {
     menu.classList.toggle("move")
+    navbar.classList.toggle("open-menu")
 };
+
+window.onscroll=()=>{
+    menu.classList.remove("move")
+    navbar.classList.remove("open-menu")
+}
 
 // reviews swiper
 var swiper = new Swiper(".reviews-content", {
