@@ -67,3 +67,10 @@ let header = document.querySelector('header')
 window.addEventListener('scroll', ()=>{
     header.classList.toggle("header-active", window.scrollY > 0)
 })
+
+//scroll top
+let scrollTop = document.querySelector('.scroll-top')
+
+window.addEventListener('scroll', ()=>{
+    scrollTop.classList.toggle("scroll-active", window.scrollY > 0)
+})

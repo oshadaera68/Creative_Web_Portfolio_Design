@@ -509,18 +509,18 @@ header {
     border-radius: 0.4rem;
 }
 
-.contact-form .send-btn{
+.contact-form .send-btn {
     width: 120px;
     font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 500;
     text-transform: uppercase;
-    padding:12px;
+    padding: 12px;
     background: var(--main-color);
     cursor: pointer;
 }
 
-.contact-form .send-btn:hover{
+.contact-form .send-btn:hover {
     background: #546eff;
     transition: 0.3s all linear;
 }
@@ -534,11 +534,11 @@ header {
     padding: 30px 0;
 }
 
-.footer p{
+.footer p {
     font-size: 0.9rem;
 }
 
-.footer-links{
+.footer-links {
     display: flex;
     align-items: center;
     column-gap: 1rem;
@@ -553,4 +553,30 @@ header {
 .footer-links a:hover {
     color: var(--main-color);
     transition: 0.3s all linear;
+}
+
+/* scroll top */
+.scroll-top {
+    position: fixed;
+    bottom: -100%;
+    right: 1.5rem;
+}
+
+
+.scroll-top .bx {
+    padding: 8px;
+    font-size: 1.3rem;
+    color: var(--bg-color);
+    background: var(--box-color);
+    border-radius: 0.2rem;
+}
+
+.scroll-top .bx:hover {
+    background: var(--container-color);
+    transition: 0.3s;
+}
+
+.scroll-active {
+    bottom: 2rem;
+    transition: 0.3s;
 }
